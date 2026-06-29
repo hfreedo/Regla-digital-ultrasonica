@@ -1,9 +1,36 @@
-# Aviso de licencia y derechos
+# Licencia de Uso Educativo y Demostrativo No Comercial
 
-**Regla Digital Arduino** es un proyecto académico desarrollado para la exposición del **Grupo 1 del 7.º B**, en el marco de la **Clase de Robótica Educativa del Colegio Santa Caterina Da Siena**.
+Copyright © 2026 Clase de Robótica Educativa del Colegio Santa Caterina Da Siena.
 
-Copyright © 2026 Clase de Robótica Educativa del Colegio Santa Caterina Da Siena. Todos los derechos reservados.
+El proyecto **Regla Digital Arduino**, incluyendo su código fuente, firmware, documentación, interfaz gráfica, ejecutable portable, recursos visuales y materiales asociados, se distribuye con fines educativos, demostrativos y de aprendizaje.
 
-El material puede utilizarse para la presentación, demostración y evaluación educativa del proyecto dentro de la institución. La reproducción, modificación, publicación o distribución externa, especialmente con fines comerciales, requiere autorización previa de la Clase de Robótica Educativa y del Colegio Santa Caterina Da Siena.
+## 1. Usos permitidos
 
-Arduino y sus signos distintivos pertenecen a sus respectivos titulares. Su referencia en este proyecto identifica la plataforma tecnológica utilizada y no implica afiliación ni patrocinio.
+Se permite usar, copiar, estudiar, modificar y compartir el proyecto cuando el uso tenga fines educativos, escolares, académicos, demostrativos, de feria científica o de aprendizaje personal, siempre que:
+
+- No exista finalidad comercial directa ni indirecta.
+- Se mantenga el aviso de autoría original.
+- Se conserve una copia de esta licencia junto con el proyecto o sus derivados.
+- No se presente el prototipo como un instrumento certificado, industrial, profesional o apto para mediciones críticas.
+
+## 2. Uso comercial no permitido
+
+Esta licencia no autoriza:
+
+- Vender, alquilar, sublicenciar o comercializar el proyecto, total o parcialmente.
+- Utilizarlo en cursos, talleres, capacitaciones, clases, plataformas, servicios o materiales por los que se cobre dinero.
+- Integrarlo en productos, servicios, consultorías, contenidos comerciales o demostraciones promocionales.
+- Utilizar el nombre, imagen, documentación, ejecutable o interfaz para obtener beneficio económico.
+- Eliminar o alterar los avisos de autoría, licencia o atribución.
+
+## 3. Obras derivadas
+
+Las modificaciones, adaptaciones y versiones derivadas solamente pueden compartirse bajo condiciones compatibles con esta licencia, manteniendo la restricción de uso no comercial y el reconocimiento de autoría correspondiente.
+
+## 4. Sin garantía
+
+El proyecto se entrega **tal cual**, sin garantía expresa o implícita. Sus autores o titulares no serán responsables por daños, pérdidas, fallas, interrupciones, usos indebidos o consecuencias derivadas de su utilización.
+
+## 5. Alcance educativo
+
+Regla Digital Arduino es un prototipo escolar basado en un sensor ultrasónico HC-SR04. No reemplaza instrumentos profesionales o certificados y no debe emplearse para mediciones de seguridad, industriales, médicas ni críticas.

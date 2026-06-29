@@ -1,5 +1,10 @@
 # Regla Digital Arduino
 
+![Uso educativo](https://img.shields.io/badge/uso-educativo%20y%20demostrativo-0a9396)
+![Plataforma](https://img.shields.io/badge/plataforma-Windows-2563eb)
+![Arduino](https://img.shields.io/badge/hardware-Arduino%20UNO-00979d)
+![Release](https://img.shields.io/github/v/release/hfreedo/Regla-digital-ultrasonica?label=versi%C3%B3n&color=51e898)
+
 Herramienta visual e interactiva para medir distancias con Arduino UNO, sensor HC-SR04 y LCD 16×2 I2C. Fue desarrollada para la exposición del **Grupo 1 del 7.º B**, dentro de la **Clase de Robótica Educativa del Colegio Santa Caterina Da Siena**.
 
 ![Interfaz principal de la Regla Digital](docs/interfaz-principal.png)
@@ -98,4 +103,6 @@ El sistema mide la distancia desde la cara del HC-SR04 hasta una superficie; no 
 
 ## Licencia y derechos
 
-Copyright © 2026 Clase de Robótica Educativa del Colegio Santa Caterina Da Siena. Todos los derechos reservados. Consultar [`LICENSE.md`](LICENSE.md).
+El proyecto se distribuye bajo una licencia de uso educativo y demostrativo no comercial. Se permite usarlo, estudiarlo, modificarlo y compartirlo con fines escolares, académicos o de aprendizaje, conservando la atribución y la licencia original.
+
+No se permite venderlo, incorporarlo en servicios comerciales, utilizarlo en actividades pagas ni obtener beneficio económico mediante su uso. Consultar [`LICENSE.md`](LICENSE.md).
