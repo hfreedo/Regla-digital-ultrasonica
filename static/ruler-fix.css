@@ -1,0 +1,9 @@
+.ruler {
+  display: block;
+  position: relative;
+}
+
+.ruler .tick {
+  position: absolute;
+  top: 0;
+}

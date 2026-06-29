@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regla Digital Arduino</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ruler-fix.css">
+  <link rel="stylesheet" href="review-fixes.css">
+  <link rel="stylesheet" href="identity.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark"><img src="assets/arduino-logo.svg" alt="Arduino"></div>
+        <div><h1>REGLA DIGITAL</h1><p>Medición ultrasónica interactiva</p></div>
+      </div>
+      <div class="top-actions">
+        <button id="fullscreenBtn" class="icon-btn" title="Pantalla completa" aria-label="Activar pantalla completa">⛶</button>
+        <button id="settingsBtn" class="status-pill" aria-haspopup="dialog" aria-controls="settingsPanel" aria-expanded="false" title="Abrir panel de conexión">
+          <span id="connectionDot" class="connection-dot"></span>
+          <span class="connection-copy"><small>CONEXIÓN</small><span id="connectionText">MODO SIMULACIÓN</span></span>
+          <span class="connection-chevron" aria-hidden="true">⌄</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="institution-bar" aria-label="Identificación institucional">
+      <div class="school-logo-wrap">
+        <img src="assets/santa-caterina-emblem.bmp" alt="Emblema del Colegio Santa Caterina Da Siena">
+      </div>
+      <div class="institution-divider" aria-hidden="true"></div>
+      <div class="institution-copy">
+        <strong>COLEGIO SANTA CATERINA DA SIENA</strong>
+        <span>Clase de Robótica Educativa</span>
+      </div>
+      <div class="presentation-identity">
+        <span>EXPOSICIÓN</span>
+        <strong>GRUPO 1 · 7.º B</strong>
+      </div>
+      <span class="academic-badge">PROYECTO ACADÉMICO · 2026</span>
+    </section>
+
+    <main>
+      <section class="measurement-card">
+        <div class="measurement-heading">DISTANCIA DETECTADA</div>
+        <div class="measurement-value" aria-live="polite">
+          <span id="distanceValue">35,0</span><span class="unit">cm</span>
+        </div>
+        <div id="measurementStatus" class="measurement-status stable"><span></span> MEDICIÓN ESTABLE</div>
+
+        <div class="scene" id="scene">
+          <div class="sensor-wrap">
+            <div class="sensor-name">HC-SR04</div>
+            <div class="sensor"><i></i><i></i></div>
+          </div>
+          <div class="waves" id="waves"><i></i><i></i><i></i></div>
+          <div class="beam"><div id="beamFill" class="beam-fill"></div></div>
+          <div id="target" class="target" title="Objeto detectado"><span></span></div>
+          <div id="referenceMarker" class="reference-marker"><span>REFERENCIA</span></div>
+        </div>
+
+        <div class="ruler-wrap">
+          <div id="ruler" class="ruler"></div>
+        </div>
+        <div class="range-caption"><span>ZONA MÍNIMA 2 cm</span><span>RANGO DE DEMOSTRACIÓN 100 cm</span></div>
+      </section>
+
+      <section class="action-grid">
+        <button id="freezeBtn" class="action-card"><span class="action-icon">❄</span><span><b>CONGELAR</b><small>Capturar lectura</small></span></button>
+        <button id="referenceBtn" class="action-card"><span class="action-icon">A</span><span><b>MARCAR REFERENCIA</b><small>Comparar posiciones</small></span></button>
+        <button id="challengeBtn" class="action-card accent"><span class="action-icon">◎</span><span><b>INICIAR DESAFÍO</b><small>Alcanzar una distancia</small></span></button>
+      </section>
+
+      <section class="info-grid">
+        <article class="info-card"><span>LECTURA CAPTURADA</span><strong id="frozenValue">—</strong></article>
+        <article class="info-card"><span>REFERENCIA / DIFERENCIA</span><strong id="comparisonValue">—</strong></article>
+        <article class="info-card challenge-info"><span id="challengeLabel">DESAFÍO</span><strong id="challengeValue">Sin iniciar</strong></article>
+      </section>
+    </main>
+
+    <footer class="project-footer">
+      <strong>ROBÓTICA EDUCATIVA</strong>
+    </footer>
+  </div>
+
+  <aside id="settingsPanel" class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" aria-hidden="true">
+    <div class="panel-head"><div><span>CONFIGURACIÓN</span><h2 id="settingsTitle">CONEXIÓN</h2></div><button id="closeSettings" aria-label="Cerrar panel de conexión">×</button></div>
+    <label for="portSelect">Puerto del Arduino</label>
+    <div class="port-row"><select id="portSelect"><option>Buscando puertos…</option></select><button id="refreshPorts" aria-label="Buscar puertos nuevamente" title="Buscar puertos nuevamente">↻</button></div>
+    <button id="connectBtn" class="primary-btn">CONECTAR ARDUINO</button>
+    <button id="simulationBtn" class="secondary-btn">USAR SIMULACIÓN</button>
+    <div id="connectionMessage" class="connection-message">La simulación permite probar toda la interfaz sin hardware.</div>
+    <div class="wiring">
+      <h3>CONEXIONES</h3>
+      <p><span>HC-SR04 TRIG</span><b>D9</b></p><p><span>HC-SR04 ECHO</span><b>D10</b></p>
+      <p><span>LCD SDA</span><b>A4</b></p><p><span>LCD SCL</span><b>A5</b></p>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
