@@ -6,7 +6,7 @@ Herramienta visual e interactiva para medir distancias con Arduino UNO, sensor H
 
 ## Descarga portable
 
-La opción recomendada para la computadora de exposición es descargar [`ReglaDigitalPortable.zip`](ReglaDigitalPortable.zip).
+La opción recomendada para la computadora de exposición es descargar [`ReglaDigitalPortable.zip`](https://github.com/hfreedo/Regla-digital-ultrasonica/releases/latest/download/ReglaDigitalPortable.zip).
 
 Después de descomprimirlo, ejecutar:
 
